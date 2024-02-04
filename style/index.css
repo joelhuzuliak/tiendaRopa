@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #0B0B0D;
+}
+
+/* Header */
+
+#contenedorNav {
+    background-color: #0B0B0D;
+}
+
+#titulo {
+    color: #BE967E;
+}
+
+#navegacion {
+    color: #BE967E;
+}
+
+#navegacion:hover {
+    background-color: none;
+}
+
+#navHamburguesa{
+    background-color: #BE967E;
+}
+
+#navegacionDropdown {
+    color: #BE967E;
+}
+
+#navegacionDropdown:hover {
+    background-color: #BE967E;
+    color: #D9C1AB;
+}
+
+#contenedorNavegacion {
+    background-color: #0B0B0D;
+}
+
+#busqueda {
+    border: none;
+    background-color: #BE967E;
+}
+
+#btnBuscar {
+    color: black;
+    background-color: #BE967E;
+    border: none;
+}
+
+#btnBuscar:hover {
+    background-color: #D9C1AB;
+    color: black;
+}
+
+/* Sobre Nosotros */
+
+.contenedorNosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedorNosotros h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #D9C1AB;
+    box-shadow: 0 0 10px #BE967E
+}
+
+.nosotros {
+    width: 90%;
+    background-color: #BE967E;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #BE967E;
+}
+
+.contenedorImg {
+    width: 100%;
+    text-align: center;
+}
+
+.contenedorImg img {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px black;
+}
+
+.contenedorInfo {
+    padding: 0 15px;
+}
+
+.contenedorInfo h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contenedorInfo p {
+    text-align: center;
+}
+
+@media (min-width:1024px) {
+
+    .nosotros {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+    }
+
+    .contenedorImg img {
+        width: 350px;
+    }
+
+    .contenedorInfo h3 {
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+
+    .contenedorInfo p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .nosotros {
+        width: 80%;
+    }
+
+    .contenedorImg img {
+        width: 400px;
+    }
+}
+
+/* Productos mas vendidos */
+
+.productosMasVendidos h3{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #D9C1AB;
+    box-shadow: 0 0 10px #BE967E
+}
+
+.contenedorMasVendidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#contenedorCard {
+    margin: 10px 15px;
+    background-color: #BE967E;
+    box-shadow: 0 0 10px #BE967E;
+    cursor: pointer;
+}
+
+#contenedorCard img {
+    width: 100%;
+    height: 50vh;
+}
+
+#infoMasVendidos h5{
+    text-transform: uppercase;
+}
+
+#infoMasVendidos a {
+    background-color: #be7b51;
+    color: #D9C1AB;
+    border: 2px solid #D9C1AB;
+    text-transform: uppercase;
+}
+
+#infoMasVendidos a:hover {
+    background-color: #D9C1AB;
+    color: #be7b51;
+    border: 2px solid #be7b51;
+}
+
+@media (min-width:500px) {
+
+    #contenedorCard {
+        width: 300px;
+        margin: 20px;
+    }
+}
+
+@media (min-width:660px) {
+
+    #contenedorCard {
+        width: 380px;
+    }
+}
+
+@media (min-width:770px) {
+
+    .masVendido {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contenedorCard {
+        width: 250px;
+        margin: 20px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    .contenedorMasVendidos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contenedorCard {
+        width: 220px;
+        margin: 18px;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .contenedorMasVendidos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #contenedorCard {
+        width: 260px;
+        margin: 20px;
+    }
+}
+
+@media (min-width:1900px) {
+
+    #contenedorCard {
+        width: 400px;
+        margin: 20px;
+    }
+}
